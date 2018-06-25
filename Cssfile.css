@@ -5,15 +5,6 @@
 	padding-top: 30px;
 }
 
-
-
-
-
-
-
-
-
-
 .divh{
 
 	width: 100%;
@@ -84,15 +75,6 @@ input[type="submit"]{
           padding: 10px;
           border-radius: 1px;
         }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -244,4 +226,16 @@ input[type="submit"]{
 	height: 320px;
 	margin-top: 2px;
 	background-color:#CACFD2;
+}
+
+
+/*manage_waiter.html*/
+
+.div{
+	border:1px solid black;
+	background-color:#CACFD2; 
+	margin-top: 5px; 
+	padding-bottom: 200px; 
+	padding-left:-50px; 
+	width: 800px;
 }
