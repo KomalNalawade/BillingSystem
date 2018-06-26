@@ -250,6 +250,9 @@ input[type="submit"]{
 	margin-top: 50px;
 }
 
+li{
+	display: inline;
+}
 
 
 
