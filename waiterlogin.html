@@ -1,48 +1,84 @@
-<html>adesh
+<!DOCTYPE html>
+<html>
 
 <head>
     <title>Waiter Login</title>
     <link rel="stylesheet" type="text/css" href="Cssfile.css">
+    <style type="text/css">
+        button,
+        input[type="submit"] {
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        <!-- input[type="text"],
+        input[type="password"],
+        input[type=number],
+        input [type="email"] {
+            margin-left: -19px;
+        }
+        
+        -->input[type="submit"] {
+            width: 270px;
+            margin-left: -19px;
+            background-color: blue;
+            color: white;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
     <center>
         <div class="topdiv">
-            <h1 style="color: lightgray;">Hotel Name</h1>
+            <center>
+                <h1 style="color: lightgray;">Hotel Name</h1>
+            </center>
         </div>
-        <div class="divwaiterlogin">
-            <h1>Waiter Login</h1>
-            <div id="Login1">
-                <b>User ID</b><input type="text" name="username" id="username">
+        <div class="divadmin">
+            <h1 style="margin-left: -10px;">Waiter Login</h1>
+            <div id="Maindiv">
+                <form action="adminpanel.html" method="post">
+                    <input type="text" name="username" id="username" placeholder="Enter Your UserName Or ID">
+                    <br/>
+                    <br/>
+                    <input type="password" name="password" id="password" placeholder="Enter Password">
+
+                    <br/>
+                    <br/>
+
+                    <input value="Login" type="submit" name="Submit"></input>
+                    <br/>
+                    <br/>
+                    <a href="#" onclick="myFunction()" style="">Forgot Password?</a>
+                    <br/>
+                    <br/>
+                </form>
+
+            </div>
+            <div style="display:none;" id="myDIV">
+                <input class="email" type="email" name="email" id="email" placeholder="Enter Ur Email-ID" style="margin-left: -20px;">
                 <br/>
                 <br/>
-                <b>Password</b><input type="password" name="password" id="password">
-                <br/>
-                <br/>
-                <a href="#" onclick="myFunction1()">
-                    <font style="margin-left: 170px">Forgot Password?</font>
+                <a href="adminlogin.html"><input value="Send" type="submit" name="Submit"></input>
                 </a>
-                <br/>
-                <br/>
-                <a href="waiter_panel.html"><button>Login</button></a>
-            </div>
-            <div style="display: none; background-color: #CACFD2;" id="Fgtpass">
-                <b>E-mail Id:</b><input type="text" name="email">
-                <br/>
-                <br/>
-                <a href="waiterlogin.html"><button>Send</button></a>
             </div>
         </div>
+
+
+
+
     </center>
     <script>
-        function myFunction1() {
-            var x = document.getElementById("Fgtpass");
-            var y = document.getElementById("Login1");
-
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            var y = document.getElementById("Maindiv");
             if (x.style.display === "block") {
                 x.style.display = "none";
                 y.style.display = "block";
-
             } else {
                 x.style.display = "block";
                 y.style.display = "none";
@@ -62,6 +98,26 @@
                 </ul>
             </h4>
         </footer>
+    </div>
+    </div>
+    </center>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            var y = document.getElementById("Maindiv");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+                y.style.display = "block";
+            } else {
+                x.style.display = "block";
+                y.style.display = "none";
+
+            }
+        }
+    </script>
+
+
+
 </body>
 
 </html>
