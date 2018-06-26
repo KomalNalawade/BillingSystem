@@ -1,64 +1,67 @@
-<html>
-   <head>
-      <title>Waiter Login</title>
-      <link rel="stylesheet" type="text/css" href="Cssfile.css">
-   </head>
-   <body>
-      <center>
-        <div class="topdiv" >
-          <h1 style="color: lightgray;">Hotel Name</h1>
-      </div>
-         <div class="divwaiterlogin" >
+<html>adesh
+
+<head>
+    <title>Waiter Login</title>
+    <link rel="stylesheet" type="text/css" href="Cssfile.css">
+</head>
+
+<body>
+    <center>
+        <div class="topdiv">
+            <h1 style="color: lightgray;">Hotel Name</h1>
+        </div>
+        <div class="divwaiterlogin">
             <h1>Waiter Login</h1>
             <div id="Login1">
-               <b>User ID</b><input type="text" name="username" id="username">
-               <br/>
-               <br/>
-               <b>Password</b><input type="password" name="password" id="password">
-               <br/>
-               <br/>
-               <a href="#" onclick="myFunction1()"><font style="margin-left: 170px">Forgot Password?</font></a>
-               <br/>
-               <br/>
-               <a href="waiter_panel.html"><button>Login</button></a>
+                <b>User ID</b><input type="text" name="username" id="username">
+                <br/>
+                <br/>
+                <b>Password</b><input type="password" name="password" id="password">
+                <br/>
+                <br/>
+                <a href="#" onclick="myFunction1()">
+                    <font style="margin-left: 170px">Forgot Password?</font>
+                </a>
+                <br/>
+                <br/>
+                <a href="waiter_panel.html"><button>Login</button></a>
             </div>
             <div style="display: none; background-color: #CACFD2;" id="Fgtpass">
-               <b>E-mail Id:</b><input type="text" name="email">
-               <br/>
-               <br/>
-               <a href="waiterlogin.html"><button>Send</button></a>
+                <b>E-mail Id:</b><input type="text" name="email">
+                <br/>
+                <br/>
+                <a href="waiterlogin.html"><button>Send</button></a>
             </div>
-         </div>
-      </center>
-      <script>
-         function myFunction1() {
-             var x = document.getElementById("Fgtpass");
-             var y = document.getElementById("Login1");
-             
-             if (x.style.display === "block") {
-                 x.style.display = "none";
-                 y.style.display = "block";
-                 
-             } else {
-                 x.style.display = "block";
-                 y.style.display = "none";
-                
-             }
-         }
-      </script>
-      <div class="footer">
+        </div>
+    </center>
+    <script>
+        function myFunction1() {
+            var x = document.getElementById("Fgtpass");
+            var y = document.getElementById("Login1");
+
+            if (x.style.display === "block") {
+                x.style.display = "none";
+                y.style.display = "block";
+
+            } else {
+                x.style.display = "block";
+                y.style.display = "none";
+
+            }
+        }
+    </script>
+    <div class="footer">
         <footer>
-        <h4 style="text-align: center; color: black">&copy; 2018 Hotel Billing System.All rights reserved. 
-          
-          Hotel billing system and hotel billing system logo are trademarks or registered trademarks of hotel billing system.
-          <br/>
-          <ul>
-         <li><a href="www.facebook.com">follow us on facebook &nbsp  </a> </li>
-          <li><a href="twitter.com">follow us on twitter &nbsp</a></li>
-          <li><a href="terms.html">Terms of use &nbsp </a></li>
-          <li><a href="privacy.html">Privacy policy &nbsp </a></li>
-          </ul>
-        </h4>
+            <h4 style="text-align: center; color: black">&copy; 2018 Hotel Billing System.All rights reserved. Hotel billing system and hotel billing system logo are trademarks or registered trademarks of hotel billing system.
+                <br/>
+                <ul>
+                    <li><a href="www.facebook.com">follow us on facebook &nbsp  </a> </li>
+                    <li><a href="twitter.com">follow us on twitter &nbsp</a></li>
+                    <li><a href="terms.html">Terms of use &nbsp </a></li>
+                    <li><a href="privacy.html">Privacy policy &nbsp </a></li>
+                </ul>
+            </h4>
         </footer>
-   </body>
+</body>
+
 </html>
